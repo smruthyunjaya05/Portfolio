@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mruthyunjaya S - Portfolio</title>
+    <meta name="description" content="Portfolio of Mruthyunjaya S - AI & ML Student, UI/UX Designer, and Full Stack Developer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-text">MRUTHYUNJAYA S</div>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo"><img src="assets/images/logo.png" alt="Mruthyunjaya S Logo" class="logo-img"></a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                        <span class="hero-name">
+                            <span class="greeting">Hello I'm</span> 
+                            <span class="my-name">MRUTHYUNJAYA S</span>
+                        </span>
+                </h1>
+                <p class="hero-tagline">
+                    Designing visually stunning and intuitive digital experiences blending aesthetics with functionality.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-scroll="projects">View Projects</button>
+                    <button class="btn btn-secondary" data-scroll="contact">Get in Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder">
+                        <img src="assets/images/Profile.png" alt="Mruthyunjaya S" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-bio">
+                        B.E. AI & ML student at Global Academy of Technology (CGPA 9.3, 2022–2026), passionate about UI/UX design and artificial intelligence. I blend creativity with technical expertise to create meaningful digital experiences.
+                    </p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 – 2026</div>
+                                <div class="timeline-content">
+                                    <h4>B.E. Artificial Intelligence & Machine Learning</h4>
+                                    <p>Global Academy of Technology</p>
+                                    <span class="grade">CGPA: 9.3</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 – 2022</div>
+                                <div class="timeline-content">
+                                    <h4>Pre-University (PCMB)</h4>
+                                    <p>Sri Chaitanya PU College</p>
+                                    <span class="grade">89%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Data Science Intern</h3>
+                        <span class="experience-company">Brainovision Solutions</span>
+                        <span class="experience-date">Feb – Apr 2024</span>
+                    </div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>Worked extensively with Python, NumPy, Pandas, and Seaborn for data analysis</li>
+                            <li>Performed feature engineering and data cleaning on large datasets</li>
+                            <li>Conducted exploratory data analysis to derive meaningful insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="raktaseva">
+                    <div class="project-image">
+                        <img src="assets/images/Raktaseva/Raktaseva Banner.png" alt="Raktaseva Banner" class="project-banner">
+                    </div>
+                    <div class="project-content">
+                        <h3>Raktaseva</h3>
+                        <p>Blood Donation Platform</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Flask</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="farmconnect">
+                    <div class="project-image">
+                        <img src="assets/images/Farm Connect/Farm Connect Banner.png" alt="Farm Connect Banner" class="project-banner">
+                    </div>
+                    <div class="project-content">
+                        <h3>Farm Connect</h3>
+                        <p>PHP E-Commerce Store</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>PayPal API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="mediswitch">
+                    <div class="project-image">
+                        <img src="assets/images/MediSwitch/MediSwitch Banner.png" alt="MediSwitch Banner" class="project-banner">
+                    </div>
+                    <div class="project-content">
+                        <h3>MediSwitch</h3>
+                        <p>Alternative Medicine Recommendation System</p>
+                        <div class="project-tech">
+                            <span>Flask</span>
+                            <span>Sklearn</span>
+                            <span>Botpress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="pedestrian">
+                    <div class="project-image">
+                        <img src="assets/images/Pedestrian Detection/Pedestrian Detection Banner.png" alt="Pedestrian Detection Banner" class="project-banner">
+                    </div>
+                    <div class="project-content">
+                        <h3>Pedestrian Detection</h3>
+                        <p>Android App with AI Detection</p>
+                        <div class="project-tech">
+                            <span>YOLOv8</span>
+                            <span>TensorFlow Lite</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/3rd Place.png" alt="3rd Place" class="achievement-img">
+                    </div>
+                    <h3>3rd Place</h3>
+                    <p>Full Stack Hackathon (Raktaseva)</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/Winner x2.png" alt="Winner x2" class="achievement-img">
+                    </div>
+                    <h3>Winner x2</h3>
+                    <p>Sketching Competitions</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/Finalist.png" alt="Finalist" class="achievement-img">
+                    </div>
+                    <h3>Finalist</h3>
+                    <p>Technovate Case Competition</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/Core Committee.png" alt="Core Committee" class="achievement-img">
+                    </div>
+                    <h3>Core Committee</h3>
+                    <p>VTU Youth Fest 2025</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/Core Member.png" alt="Core Member" class="achievement-img">
+                    </div>
+                    <h3>Core Member</h3>
+                    <p>GCC GAT Coding Club</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-image">
+                        <img src="assets/images/Creative Head.png" alt="Creative Head" class="achievement-img">
+                    </div>
+                    <h3>Creative Head</h3>
+                    <p>Code Breaker Hackathon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-content">
+                <div class="cert-category">
+                    <h3>Programming & Development</h3>
+                    <ul>
+                        <li>Java Certification</li>
+                        <li>Django Framework</li>
+                        <li>Git Version Control</li>
+                        <li>DevOps Fundamentals</li>
+                    </ul>
+                </div>
+                <div class="cert-category">
+                    <h3>Cloud & Analytics</h3>
+                    <ul>
+                        <li>Microsoft Azure Essentials</li>
+                        <li>Microsoft Azure Fundamentals</li>
+                        <li>Power BI Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:s.mruthyunjaya05@gmail.com">s.mruthyunjaya05@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+916362994682">+91 6362994682</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/mruthyunjaya-s-259222215" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/smruthyunjaya05" target="_blank" rel="noopener noreferrer">View my code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mruthyunjaya-s-259222215" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/smruthyunjaya05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mruthyunjaya S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
