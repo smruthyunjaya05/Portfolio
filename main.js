@@ -143,15 +143,26 @@ function initNavigation() {
 
 // ===== SMOOTH SCROLLING =====
 function initSmoothScrolling() {
+    // For buttons with data-scroll attribute
     const buttons = document.querySelectorAll('.btn[data-scroll]');
-
     buttons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = button.getAttribute('data-scroll');
             const targetElement = document.getElementById(targetId);
-
             if (targetElement) {
+                smoothScrollTo(targetElement);
+            }
+        });
+    });
+
+    // For all internal anchor links on the same page (e.g., in nav and footer)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
                 smoothScrollTo(targetElement);
             }
         });
