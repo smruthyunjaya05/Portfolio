@@ -82,6 +82,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: pulse 2s ease-in-out infinite;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .loader-progress {
@@ -1332,15 +1333,16 @@ body {
 
     .hero-name {
         font-size: 2.5rem;
-        white-space: normal;
+        white-space: nowrap; /* Prevent name from wrapping */
         text-align: left;
-        line-height: 1.2;
+        line-height: 1.3; /* Increase line height for better spacing */
         padding-top: 5rem;
     }
 
     .hero-tagline {
         font-size: 1rem;
         margin-top: 1rem;
+        white-space: normal; /* Ensure tagline can wrap */
         text-align: left;
     }
 
