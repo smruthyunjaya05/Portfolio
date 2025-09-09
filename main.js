@@ -5,21 +5,28 @@ let isLoading = true;
 
 // ===== DOM CONTENT LOADED =====
 document.addEventListener('DOMContentLoaded', function() {
-    initializeApp();
+    // Run components common to all pages
+    initCommonComponents();
+
+    // Run homepage-specific logic only if the loader exists
+    if (document.getElementById('loader')) {
+        initializeApp();
+    }
 });
 
-// ===== INITIALIZE APPLICATION =====
-function initializeApp() {
-    // Initialize all components
-    initLoader();
+// ===== INITIALIZE COMMON COMPONENTS (RUNS ON ALL PAGES) =====
+function initCommonComponents() {
     initCustomCursor();
     initNavigation();
     initSmoothScrolling();
     initScrollAnimations();
     initProjectLinks();
     initContactLinks();
-    
-    // Start loader sequence
+}
+
+// ===== INITIALIZE HOMEPAGE APPLICATION (LOADER & HERO) =====
+function initializeApp() {
+    initLoader();
     setTimeout(() => {
         hideLoader();
     }, 2500);
@@ -143,23 +150,12 @@ function initNavigation() {
 
 // ===== SMOOTH SCROLLING =====
 function initSmoothScrolling() {
-    // For buttons with data-scroll attribute
-    const buttons = document.querySelectorAll('.btn[data-scroll]');
-    buttons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = button.getAttribute('data-scroll');
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                smoothScrollTo(targetElement);
-            }
-        });
-    });
-
     // For all internal anchor links on the same page (e.g., in nav and footer)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
+            // Don't smooth scroll for empty href
+            if (targetId === '#') return;
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();

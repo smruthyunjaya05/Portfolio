@@ -1014,7 +1014,7 @@ body {
     color: #ff4500;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 0.9rem; /* Increased font size */
+    font-size: 0.85rem; /* Increased font size */
     word-break: break-all; /* Prevent long links from overflowing */
 }
 
@@ -1036,7 +1036,7 @@ body {
 
 /* Gradient Section */
 .footer-gradient {
-  background: linear-gradient(90deg, #8b0000, #ff4500, #ff6a00, #ffa500, #ffd700);
+  background: linear-gradient(90deg, #000000 1%, #ff4500, #ff6a00, #ffa500);
   padding: 9rem 4rem 9rem; /* Increased height */
   position: relative;
   border-radius: 20px; /* Added curved edges */
@@ -1075,7 +1075,7 @@ body {
   margin: 0 1rem;
   color: #ffffff; /* Matched color with contact links */
   text-decoration: none;
-  font-weight: 600; /* Made text bold */
+  font-weight: 300; /* Made text bold */
   font-size: 1.3rem; /* Matched font size with contact headings */
   transition: color 0.3s;
   font-family: 'Inter', sans-serif; /* Use main font */
